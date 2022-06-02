@@ -14,23 +14,23 @@ Implement gRPC communication in Node(client-side) and Go(server-side)
 
 ### How to run
 
-1. Clone this repository using <code> git clone - </code>
+1. Clone this repository using <code>git clone https://github.com/jinsub1999/gRPC_between_Node_Go.git</code>
 
-1. Get node packages using <code> npm install </code> in project root directory.
+1. Get node packages using <code>npm install</code> in project root directory.
 
 1. For each folders(examples),
 
     - To run server program implemented in Go,
-        - <code> go get </code> to get packages,
-        - <code> go run server.go </code>
+        - <code>go get</code> to get packages,
+        - <code>go run server.go</code>
 
-    - To run client program implemented in Node, <code> node client.js </code>
+    - To run client program implemented in Node, <code>node client.js</code>
 
 - If you want to change protobuf files and recompile, 
 
     <code>protoc --go_out=. --go_opt=paths=source_relative \
     --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-    ./folder_name/file_name.proto </code>
+    ./folder_name/file_name.proto</code>
 
     [Reference][3]
 

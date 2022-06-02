@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "fssn/lec07prg04";
+
+package serverstreaming;
+
+service ServerStreaming {
+  // A Client streaming RPC.
+   rpc GetServerResponse(Number) returns (stream Message) {}
+}
+
+message Message {
+  string message = 1;
+}
+
+message Number {
+  int32 value = 1;
+}

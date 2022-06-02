@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package= "fssn/lec07prg01";
+
+// package hello_grpc;
+package hellogrpc;
+
+service MyService {
+    rpc MyFunction(MyNumber) returns (MyNumber) {}
+}
+
+message MyNumber {
+    int32 value = 1;
+}
